@@ -253,8 +253,8 @@
             
               
                 
-                <a class="post-title-link" href="/2017/02/21/静态博客搭建/" itemprop="url">
-                  静态博客搭建
+                <a class="post-title-link" href="/2017/02/22/基于RongCloud-SDK的即时通讯软件的设计与实现/" itemprop="url">
+                  基于RongCloud SDK的即时通讯软件的设计与实现
                 </a>
               
             
@@ -267,8 +267,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-02-21T21:36:09+08:00" content="2017-02-21">
-              2017-02-21
+            <time itemprop="dateCreated" datetime="2017-02-22T02:51:51+08:00" content="2017-02-22">
+              2017-02-22
             </time>
           </span>
 
@@ -281,8 +281,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/一级分类/" itemprop="url" rel="index">
-                    <span itemprop="name">一级分类</span>
+                  <a href="/categories/软件/" itemprop="url" rel="index">
+                    <span itemprop="name">软件</span>
                   </a>
                 </span>
 
@@ -293,8 +293,8 @@
 
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/一级分类/二级分类/" itemprop="url" rel="index">
-                    <span itemprop="name">二级分类</span>
+                  <a href="/categories/软件/IOS/" itemprop="url" rel="index">
+                    <span itemprop="name">IOS</span>
                   </a>
                 </span>
 
@@ -309,8 +309,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2017/02/21/静态博客搭建/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/21/静态博客搭建/" itemprop="commentsCount"></span>
+                <a href="/2017/02/22/基于RongCloud-SDK的即时通讯软件的设计与实现/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/22/基于RongCloud-SDK的即时通讯软件的设计与实现/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -334,134 +334,11 @@
 
       
         
-          <h3 id="19-01-异常-异常的概述和分类"><a href="#19-01-异常-异常的概述和分类" class="headerlink" title="19.01_异常(异常的概述和分类)"></a>19.01_异常(异常的概述和分类)</h3><ul>
-<li>A:异常的概述<ul>
-<li>异常就是Java程序在运行过程中出现的错误。</li>
-</ul>
-</li>
-<li>B:异常的分类<ul>
-<li>通过API查看Throwable</li>
-<li>Error<ul>
-<li>服务器宕机,数据库崩溃等</li>
-</ul>
-</li>
-<li>Exception<br>C:异常的继承体系</li>
-<li>Throwable<ul>
-<li>Error     </li>
-<li>Exception<ul>
-<li>RuntimeException</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+          <h1 id="基于RongCloud-SDK的即时通讯软件的设计与实现"><a href="#基于RongCloud-SDK的即时通讯软件的设计与实现" class="headerlink" title="基于RongCloud SDK的即时通讯软件的设计与实现"></a>基于RongCloud SDK的即时通讯软件的设计与实现</h1><p>   <strong>摘要</strong>：随着科技的高速发展，3G、4G网络与WIFI在现实生活中随处可得，这使得便携式移动设备极大化地普及。IOS是与安卓平分秋色的便携设备上的操作系统，凭借其精致简洁的系统界面，系统的稳定安全性深得用户的青睐。在众多的移动应用中，即时通讯软件深受用户群体的欢迎和喜爱，在IOS和安卓上的开发与应用也趋于成熟。本文就IOS系统上的即时通讯软件“Lit-C”的设计与实现进行详细的开发介绍，描述本即时通讯软件各项功能的具体实现方式。<br>   本软件在Mac环境下，以Xcode作为开发工具，以Swift作为编程语言，以LeanCloud作为云端数据库，以RongCloud作为云端服务器，采用Xcode上的Storyboard进行软件的UI设计与动态控件的连接，最终实现了在联网环境下拥有聊天交友功能的即时通讯软件。本软件从界面上主要分为登录与注册界面，会话列表界面，聊天界面，联系人界面与设置界面。软件的登录与注册界面实现了动态背景，用户信息注册，用户名与密码验证等功能；会话列表界面实现了处理请求添加好友的消息，从本地提取用户信息（若本地无用户则从服务器获取用户信息），对未读消息的处理等功能；聊天界面实现了聊天用户头像的显示，语音消息的发送，图片与表情的发送等功能；联系人界面实现了添加好友，显示昵称和头像，刷新朋友列表等功能；设置界面实现了显示本体用户信息，本体用户返回登录界面等功能。软件使用Cocoapods安装了LeanCloud、融云动态背景等必备的SDK，使用桥接OC代码的方法实现了部分通过Objective-C语言编写的类的功能。</p>
+<p><strong>关键词：</strong>IOS；即时通讯软件；LeanCloud；RongCloud；Cocoapods<br>Instant Messaging Software Design and Implemen-tation Based on RongCloud SDK<br>Abstract：With the rapid development of science and technology, 3G, 4G networks and WiFi in real life can be found anywhere in the world, which makes the maximization of portable mo-bile devices to spread. IOS and Android are all the best operating system in the world. IOS has good system stability and its simple system interface won the favor of users. Among the many mobile applications, instant messaging software is very popular and ma-ture in IOS and Android. This article introduces the design method of the instant messag-ing software which named “Lit-C” on the IOS system, and describes the realization of the function of the instant messaging software.<br>On the Mac system, it uses Xcode as a development tool, Swift as a programming lan-guage, LeanCloud as a cloud database, RongCloud as a cloud server, the Storyboard on the Xcode to design the software’s UI and realize the dynamic control function. Eventu-ally it can be completed in the environment of the Internet to chat with friends. This app is mainly divided into the login and register page, the conversation list page, the chat page, the contact list page and the set page. This app’s login and registration page includes the function of the dynamic background, getting the users’ registration information, the username and the password’s authentication; The conversation list page includes the func-tion of dealing with the request message to add friends, getting from the local extraction of user information (if no local users getting from the server), dealing with the unread message; The chat page includes the function of realizeing the display of the users’ avatar chat, sending voice messages, pictures and expressions; The contact page includes the function of adding friends, refreshing the list of friends; The settings page includes the function of receiving users’ information, being logged out. it also uses the Bridge to realize some functions that is compiled by Objective-C.</p>
+<p><strong>Key words</strong>: IOS; instant messaging software; LeanCloud; RongCloud; Cocoapods</p>
           <div class="post-more-link text-center">
-            <a class="btn" href="/2017/02/21/静态博客搭建/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/02/20/hello-world/" itemprop="url">
-                  C++
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-02-20T13:14:31+08:00" content="2017-02-20">
-              2017-02-20
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2017/02/20/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/20/hello-world/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="C-概述"><a href="#C-概述" class="headerlink" title="C++概述"></a>C++概述</h1><p>C++是C语言的继承，它既可以进行C语言的过程化程序设计，又可以进行以抽象数据类型为特点的基于对象的程序设计，还可以进行以继承和多态为特点的面向对象的程序设计。C++擅长面向对象程序设计的同时，还可以进行基于过程的程序设计，因而C++就适应的问题规模而论，大小由之。[1] </p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/02/20/hello-world/#more" rel="contents">
+            <a class="btn" href="/2017/02/22/基于RongCloud-SDK的即时通讯软件的设计与实现/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -532,7 +409,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">1</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
