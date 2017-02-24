@@ -350,13 +350,9 @@
 
       
         
-          <p>Java基础知识总结<br>写代码：<br>1，明确需求。我要做什么？<br>2，分析思路。我要怎么做？1,2,3。<br>3，确定步骤。每一个思路部分用到哪些语句，方法，和对象。<br>4，代码实现。用具体的java语言代码把思路体现出来。</p>
-<p>学习新技术的四点：<br>1，该技术是什么？<br>2，该技术有什么特点(使用注意)：<br>3，该技术怎么使用。demo<br>4，该技术什么时候用？test。</p>
-<p>一：java概述：<br>1991 年Sun公司的James Gosling等人开始开发名称为 Oak 的语言，希望用于控制嵌入在有线电视交换盒、PDA等的微处理器；<br>1994年将Oak语言更名为Java；</p>
+          <h1 id="Java基础知识总结"><a href="#Java基础知识总结" class="headerlink" title="Java基础知识总结"></a>Java基础知识总结</h1><h2 id="一：java概述："><a href="#一：java概述：" class="headerlink" title="一：java概述："></a>一：java概述：</h2><p>1991 年Sun公司的James Gosling等人开始开发名称为 Oak 的语言，希望用于控制嵌入在有线电视交换盒、PDA等的微处理器；<br>1994年将Oak语言更名为Java；</p>
 <p>Java的三种技术架构:<br>JAVAEE：Java Platform Enterprise Edition，开发企业环境下的应用程序，主要针对web程序开发；<br>JAVASE：Java Platform Standard Edition，完成桌面应用程序的开发，是其它两者的基础；<br>JAVAME：Java Platform Micro Edition，开发电子消费产品和嵌入式设备，如手机中的程序；</p>
-<p>1，JDK：Java Development Kit，java的开发和运行环境，java的开发工具和jre。<br>2，JRE：Java Runtime Environment，java程序的运行环境，java运行的所需的类库+JVM(java虚拟机)。<br>3，配置环境变量：让java jdk\bin目录下的工具，可以在任意目录下运行，原因是，将该工具所在目录告诉了系统，当使用该工具时，由系统帮我们去找指定的目录。<br>环境变量的配置：<br>    1）：永久配置方式：JAVA_HOME=%安装路径%\Java\jdk<br>                      path=%JAVA_HOME%\bin<br>    2）：临时配置方式：set path=%path%;C:\Program Files\Java\jdk\bin<br>特点：系统默认先去当前路径下找要执行的程序，如果没有，再去path中设置的路径下找。<br>classpath的配置:<br>    1）：永久配置方式：classpath=.;c:\;e:\<br>    2）：临时配置方式：set classpath=.;c:\;e:\</p>
-<p>注意：在定义classpath环境变量时，需要注意的情况<br>如果没有定义环境变量classpath，java启动jvm后，会在当前目录下查找要运行的类文件；<br>如果指定了classpath，那么会在指定的目录下查找要运行的类文件。<br>还会在当前目录找吗？两种情况：<br>    1）：如果classpath的值结尾处有分号，在具体路径中没有找到运行的类，会默认在当前目录再找一次。<br>    2）：如果classpath的值结果出没有分号，在具体的路径中没有找到运行的类，不会再当前目录找。<br>    一般不指定分号，如果没有在指定目录下找到要运行的类文件，就报错，这样可以调试程序。</p>
-<p>4，javac命令和java命令做什么事情呢？<br>    要知道java是分两部分的：一个是编译，一个是运行。<br>    javac：负责的是编译的部分，当执行javac时，会启动java的编译器程序。对指定扩展名的.java文件进行编译。 生成了jvm可以识别的字节码文件。也就是class文件，也就是java的运行程序。<br>    java：负责运行的部分.会启动jvm.加载运行时所需的类库,并对class文件进行执行.<br>    一个文件要被执行,必须要有一个执行的起始点,这个起始点就是main函数.<br>
+<p>1，JDK：Java Development Kit，java的开发和运行环境，java的开发工具和jre。<br>2，JRE：Java Runtime Environment，java程序的运行环境，java运行的所需的类库+JVM(java虚拟机)。<br>3，配置环境变量：让java jdk\bin目录下的工具，可以在任意目录下运行，原因是，将该工具所在目录告诉了系统，当使用该工具时，由系统帮我们去找指定的目录。<br>环境变量的配置：<br>    1）：永久配置方式：JAVA_HOME=%安装路径%\Java\jdk<br>                      path=%JAVA_HOME%\bin<br>    2）：临时配置方式：set path=%path%;C:\Program Files\Java\jdk\bin<br>特点：系统默认先去当前路径下找要执行的程序，如果没有，再去path中设置的路径下找。<br>classpath的配置:<br>    1）：永久配置方式：classpath=.;c:\;e:\<br>    2）：临时配置方式：set classpath=.;c:\;e:\<br>
           <div class="post-more-link text-center">
             <a class="btn" href="/2017/02/24/Java笔记/#more" rel="contents">
               阅读全文 &raquo;
