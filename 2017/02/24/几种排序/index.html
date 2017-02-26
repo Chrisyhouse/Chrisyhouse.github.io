@@ -86,14 +86,14 @@
 
 <meta name="description" content="冒泡排序与选择排序冒泡排序（Bubble Sort），是一种计算机科学领域的较简单的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越大的元素会经由交换慢慢“浮”到数列的顶端，故名。冒泡排序算法的运作如下：（从后往前）1:比较相邻的元素。如果第一个比第二个大">
 <meta property="og:type" content="article">
-<meta property="og:title" content="常见的几种排序">
+<meta property="og:title" content="常见的几种排序与数据类型">
 <meta property="og:url" content="http://yoursite.com/2017/02/24/几种排序/index.html">
 <meta property="og:site_name" content="Chrisyhouse">
 <meta property="og:description" content="冒泡排序与选择排序冒泡排序（Bubble Sort），是一种计算机科学领域的较简单的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越大的元素会经由交换慢慢“浮”到数列的顶端，故名。冒泡排序算法的运作如下：（从后往前）1:比较相邻的元素。如果第一个比第二个大">
 <meta property="og:image" content="http://olqqu4gu2.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720170224174159_meitu_2.jpg">
-<meta property="og:updated_time" content="2017-02-26T12:36:17.071Z">
+<meta property="og:updated_time" content="2017-02-26T14:23:17.060Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="常见的几种排序">
+<meta name="twitter:title" content="常见的几种排序与数据类型">
 <meta name="twitter:description" content="冒泡排序与选择排序冒泡排序（Bubble Sort），是一种计算机科学领域的较简单的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越大的元素会经由交换慢慢“浮”到数列的顶端，故名。冒泡排序算法的运作如下：（从后往前）1:比较相邻的元素。如果第一个比第二个大">
 <meta name="twitter:image" content="http://olqqu4gu2.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720170224174159_meitu_2.jpg">
 
@@ -113,7 +113,7 @@
   };
 </script>
 
-  <title> 常见的几种排序 | Chrisyhouse </title>
+  <title> 常见的几种排序与数据类型 | Chrisyhouse </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans,default">
@@ -253,7 +253,7 @@
             
             
               
-                常见的几种排序
+                常见的几种排序与数据类型
               
             
           </h1>
@@ -360,6 +360,155 @@
 <p>二分查找又称折半查找，优点是比较次数少，查找速度快，平均性能好；其<a href="http://baike.baidu.com/subview/686845/9049570.htm" target="_blank" rel="external">缺点</a>是要求待查表为有序表，且插入删除困难。因此，折半查找方法适用于不经常变动而查找频繁的有序列表。首先，假设表中元素是按升序排列，将表中间位置记录的<a href="http://baike.baidu.com/view/390935.htm" target="_blank" rel="external">关键字</a>与查找关键字比较，如果两者相等，则查找成功；否则利用中间位置<a href="http://baike.baidu.com/subview/101813/14121028.htm" target="_blank" rel="external">记录</a>将表分成前、后两个子表，如果中间位置记录的关键字大于查找关键字，则进一步查找前一子表，否则进一步查找后一子表。重复以上过程，直到找到满足条件的<a href="http://baike.baidu.com/subview/101813/14121028.htm" target="_blank" rel="external">记录</a>，使查找成功，或直到子表不存在为止，此时查找不成功。</p>
 <h3 id="二分查找要求"><a href="#二分查找要求" class="headerlink" title="二分查找要求:"></a>二分查找要求:</h3><p>1.必须采用<a href="http://baike.baidu.com/view/3585963.htm" target="_blank" rel="external">顺序存储结构</a><br>2.必须按关键字大小有序排列。</p>
 <h3 id="JAVA二分查找示例"><a href="#JAVA二分查找示例" class="headerlink" title="JAVA二分查找示例:"></a><strong>JAVA二分查找示例:</strong></h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> com.chris.array;</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Array_2</span> </span>&#123;</div><div class="line"></div><div class="line"><span class="comment">/**</span></div><div class="line"> * <span class="doctag">@param</span> args</div><div class="line"> */</div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">	<span class="keyword">int</span>[] arr = &#123; <span class="number">11</span>, <span class="number">22</span>, <span class="number">33</span>, <span class="number">44</span>, <span class="number">55</span>, <span class="number">66</span>, <span class="number">77</span> &#125;;</div><div class="line">    System.out.println(getIndex(arr,<span class="number">22</span>));</div><div class="line">    System.out.println(getIndex(arr,<span class="number">66</span>));</div><div class="line">    System.out.println(getIndex(arr,<span class="number">33</span>));</div><div class="line">    System.out.println(getIndex(arr,<span class="number">88</span>));</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/*</span></div><div class="line"> * 二分查找 1.返回值类型int 2.参数列表 in[] array,int value</div><div class="line"> */</div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">getIndex</span><span class="params">(<span class="keyword">int</span>[] arr, <span class="keyword">int</span> value)</span> </span>&#123;</div><div class="line">	<span class="keyword">int</span> min = <span class="number">0</span>;</div><div class="line">	<span class="keyword">int</span> max = arr.length - <span class="number">1</span>;</div><div class="line">	<span class="keyword">int</span> mid = (min + max) / <span class="number">2</span>;</div><div class="line">	<span class="keyword">while</span> (arr[mid] != value) &#123;            <span class="comment">//中间值和查找值不等时开始循环查找</span></div><div class="line">		<span class="keyword">if</span> (arr[mid] &lt; value) &#123;            <span class="comment">//当中间值小于查找值</span></div><div class="line">			min = mid + <span class="number">1</span>;                 <span class="comment">//最小的索引变为中间值后一个数</span></div><div class="line">		&#125; <span class="keyword">else</span> <span class="keyword">if</span> (arr[mid] &gt; value) &#123;     <span class="comment">//当中间值大于查找值</span></div><div class="line">			max = mid - <span class="number">1</span>;                 <span class="comment">//最大的索引变为中间值前一个数</span></div><div class="line">		&#125;</div><div class="line">		mid = (min + max) / <span class="number">2</span>;             <span class="comment">//中间值随之改变</span></div><div class="line">		<span class="keyword">if</span> (min &gt; max) &#123;                   <span class="comment">//最小索引大于最大索引，没有查找可能返回-1</span></div><div class="line">			<span class="keyword">return</span> -<span class="number">1</span>; </div><div class="line">		&#125;</div><div class="line">	 &#125;</div><div class="line"></div><div class="line">	<span class="keyword">return</span> mid;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="Arrays类的概述和方法使用"><a href="#Arrays类的概述和方法使用" class="headerlink" title="Arrays类的概述和方法使用"></a>Arrays类的概述和方法使用</h2><p>Arrays类包含用来操作数组的各种方法，还包含一个允许将数组作为列表来查看的静态工厂。逐一查阅，不便记忆。通过比较，本人发现只需要记住1/3就可以了，特归纳了一下，共享于大家。</p>
+<h3 id="计算机术语："><a href="#计算机术语：" class="headerlink" title="计算机术语："></a>计算机术语：</h3><p>a) 自然顺序：如果是基本类型(即原生数据)，那就是自然顺序，由小到大。如果是对象，那就是比较哈希值,由小到大。<br>b) 全序（total order）偏序只对部分元素成立关系R，全序对集合中任意两个元素都有关系R。</p>
+<p>例如：集合的包含关系就是半序，也就是偏序，因为两个集合可以互不包含；而实数中的大小关系是全序，两个实数必有一个大于等于另一个；又如：复</p>
+<p>数中的大小就是半序，虚数不能比较大小。</p>
+<p>c) NaN，是Not a Number的缩写。java 用它处理计算中出现的错误情况，比如0.0除以0.0或求负数的平方根。</p>
+<p>注意事项：<br>在使用IDE环境编写工程时，要注意环境设置。比如：下面介绍的Arrays.copyOfRange()方法与JDK版本、JRE版本都有关联，如果使用MyEclipse而没有设</p>
+<p>置JRE的路径，它就会使用版本的JRE。1.6版本才支持的方法如果你用到了1.5版本的JRE环境下，会不会报错？你知道的。</p>
+<p>d)泛型：在public static <t> int binarySearch(T[] a, T key, Comparator&lt;? super T&gt; c)声明中的<t>就是泛型（已经专门整理了两篇学习笔记，请在mfkwine博客上查找）。</t></t></p>
+<p>一、java.util.Arrays</p>
+<p>1、equals</p>
+<p>比较两个非同一数组是否相等，而数组本身的equals判断另一个数组是否它本身。</p>
+<p>声明：public static boolean equals(type[]a,type[]a2)</p>
+<p>参数：a -将测试其相等性的一个数组。a2 -将测试其相等性的另一个数组。参数的类型可以是原生数据类型和引用类型的任意一种类型。</p>
+<p>返回：如果两个相等，则返回true。</p>
+<p>描述：如果两个数组包含相同数量的元素，并且两个数组中的所有相应元素对应相等，则认为这两个数组是相等的。<br>此外，如果两个数组引用都为null，则认为它们是相等的。e1==null ? e2=null: e1.equals(e2),则认为e1和e2两个对象相等。</p>
+<p>注：equals()比较的在堆内存里存放的值， “==”则不确定，详情请参阅本人的另篇博文“比较陷阱”。</p>
+<p>2、deepEquals</p>
+<p>声明：public static boolean deepEquals(Object[] a1, Object[] a2)</p>
+<p>描述：如果两个数组引用均为null，或者它们引用了包含相同元素数量的数组，并且两数组中的所有相应元素对都是深层相等的，则认为这两个数组引用是深层相等的。换言之，第一层引用元素都对应相等，即深层相等。</p>
+<p>下列情况，两个null元素e1和e2可能是深层相等的。<br>a) e1 和 e2 都是对象引用类型的数组，并且 Arrays.deepEquals(e1, e2) 将返回 true。<br>b) e1 和 e2 都是相同基本类型的数组，并且 Arrays.equals(e1, e2) 的适当重载将返回 true。<br>c) e1 == e2<br>d) e1.equals(e2) 将返回 true</p>
+<p>参数：<br>a1 - 将测试其相等性的一个数组<br>a2 - 将测试其相等性的另一个数组</p>
+<p>返回：若两个指定数组彼此深层相等，返回true；否则返回false。</p>
+<p>注意事项：<br>a)此方法支持任意深度的null元素。</p>
+<p>b)如果指定数组中的任意一个数组直接或间接通过一个或多个数组级别，包含数组本身作为其元素，则此方法的结果是不明确的，即使用此方法的数组中的引用元素不能包含它本身。</p>
+<p>3、fill -分配值给指定数组元素</p>
+<p>//作用于数组的所有元素<br>public static void fill(type[] a, type val)</p>
+<p>//作用于数组指定范围内的元素<br>public static void fill(type[] a, int fromIndex, int toIndex, type val)</p>
+<p>描述：将指定的类型值分配给元素。若指定了类型数组的元素范围（fromIdex到toIndex(不包括)），则对值分配给指定范围内的每个元素，否则分配给数组的所有元素。若fromIndex==toIndex，则填充范围为空。</p>
+<p>参数：<br>a -要填充的数组。<br>val -要存储在数组元素中的值<br>type -数据类型，可以是任意类型（包括原生数据类型和对象数据类型）。<br>fromIndex - 要使用指定值填充的第一个元素的索引（包括）。<br>toIndex - 要使用指定值填充的最后一个元素的索引（不包括）。</p>
+<p>4、sort －排序</p>
+<p>//作用于数组的所有元素<br>public static void sort(type[] a)</p>
+<p>//作用于数组指定范围内的元素<br>public static void sort(type[] a, int fromIndex, int toIndex)</p>
+<p>描述：<br>将指定的类型（除boolean以外的任意原生数据类型）数组所有元素（或指定范围内的元素）按数字升序进行排序。<br>object型数组，根据元素的自然顺序，对指定对象数组进行升序排序。<br>（fromIndex==toIndex，则排序范围为空）</p>
+<p>参数：<br>a -要排序的数组。<br>fromIndex -要排序的第一个元素的索引（包括）<br>toIndex -要排序的最后一个元素（不包括）<br>type -数据类型可以是除boolean类型以外的所有原生数据和object型数据。</p>
+<p>注：</p>
+<p>1)double、float类型数组，使用Double.comparTo(java.lang.Double)强制使用全序排序，该排序认为-0.0<0.0并且nan>任何其他浮点值，而所有的NaN值都等效且相等。而&lt;关系式因为无法实现全序排序没有被采用。</0.0并且nan></p>
+<p>2)对于object进行sort，需注意事项：</p>
+<p>  a) object类型数组中所有元素都必须实现Comparable接口，是可相互比较的。也就是说，数组中的任何e1和e2元素而言，e1.compareTo(e2)不得抛出ClassCastException。</p>
+<p>  b) 对于object型数组，此排序不会对相等的元素重新排序，以保证数组的稳定性。</p>
+<p>  c)对于object型数组，该排序算法采用的是改进过的合并排序算法（若低子列表中的最高元素小于高子列表中的最低元素，则忽略合并）。</p>
+<p>//使用指定比较器排序</p>
+<p>方法声明：<br>public static <t> void sort(T[] a, Comparator&lt;? super T&gt; c)<br>或<br>public static <t> void sort(T[] a, int fromIndex, int toIndex, Comparator&lt;? super T&gt; c)</t></t></p>
+<p>描述：根据指定比较器产生的顺序对指定对象数组（可指定范围）进行排序。数组中（或数组指定范围内的）所有元素都必须是通过指定比较器可相互比较的。也就是说，对于是数组中（可指定范围）的任何e1和e2元素而言，c.compare(e1,e2)不得抛出ClassCastException。</p>
+<p>参数：<br>a -要排序的数组。<br>c -确定数组顺序的比较器。null值表示使用元素的自然顺序。<br>fromIndex - 要排序的第一个元素的索引（包括）。<br>toIndex - 要排序的最后一个元素的索引（不包括）。</p>
+<p>注意事项：</p>
+<p>1)此排序不会对相等的元素重新排序，以保证数组的稳定性。</p>
+<p>2)该排序算法采用的是改进过的合并排序算法（若低子列表中的最高元素小于高子列表中的最低元素，则忽略合并）。</p>
+<p>5、binarySearch -使用二进制搜索算法搜索指定数组</p>
+<p>声明：</p>
+<p>public static int binarySearch(type[] a, type key)</p>
+<p>public static int binarySearch(long[] a,int fromIndex,int toIndex,long key)</p>
+<p>public static <t> int binarySearch(T[] a, T key, Comparator&lt;? super T&gt; c)</t></p>
+<p>public static <t> int binarySearch(T[] a,int fromIndex,int toIndex,T key,Comparator&lt;? super T&gt; c)</t></p>
+<p>描述：<br>使用二进制搜索算法搜索指定的type型数组，以获得指定的值。</p>
+<p>参数：<br>a - 要搜索的数组。<br>key - 要搜索的值。<br>fromIndex - 要排序的第一个元素的索引（包括）。<br>toIndex - 要排序的最后一个元素的索引（不包括）。<br>type -byte、double、float、object、long、int、short、char、<br>c - 用来对数组进行排序的比较器。null 值指示应该使用元素的自然顺序。</p>
+<p>返回：<br>如果搜索成功，返回Key的索引；否则返回（插入点-1）。插入点被定义为将Key插入数组的那一点，即如果数组里的所有元素小于指定的key，返回大于key或者数组长度（a.length）的第一个元素。注意：这保证了当且仅当key被找到时，返回值将&gt;=0。</p>
+<p>注意事项：</p>
+<p>1、此方法调用前必须先对数组进行排序(使用sort()方法)。否则，结果不确定。</p>
+<p>2、如果数组包含多个带有指定值的元素，则无法保证打到的是哪一个。</p>
+<p>3、type为double、float时，此方法认为NaN值都是等效且相等的。</p>
+<p>抛出：</p>
+<p>ClassCastException -若搜索的key不能与数组的元素进行比较<br>IllegalArgumentException - 若 fromIndex &gt; toIndex<br>ArrayIndexOutOfBoundsException - 若fromIndex &lt; 0 或者 toIndex &gt; a.length</p>
+<p>6、toString()</p>
+<p>声明：public static String toString(type[] a)</p>
+<p>描述：</p>
+<p>返回指定数组内容的字符串表示形式。</p>
+<p>基本数组，字符串表示形式由数组的元素列表组成，括在[]，相邻元素用“, ”(逗号加空格)分隔。这些元素通过String.valueof(type)转换为字符串。</p>
+<p>如果a为null，则返回”null”。</p>
+<p>object数组，如果数组包含作为元素的其他数组，则通过从Object中继承的Object.toString()方法将它们转换为字符串，这描述了它们的标识，而不是它们的内容。返回值等于Array.aslist(a).toString()的返回值。如果为null返回“null”。</p>
+<p>参数：<br>a - 返回其字符串表示形式的数组<br>type -数组类型，可以是任意数组类型（如：int、boolean、object）</p>
+<p>返回：a的字符串表示形式</p>
+<p>7、deepToString</p>
+<p>声明：<br>public static String deepToString(Object[] a)</p>
+<p>8、copyOf -数组复制</p>
+<p>声明：<br>public static type[] copyOf(type[] original,int newLength)</p>
+<p>public static <t> T[] copyOf(T[] original,int newLength)</t></p>
+<p>public static <t,u> T[] copyOf(U[] original,int newLength,Class&lt;? extends T[]&gt; newType)</t,u></p>
+<p>描述：<br>复制指定的数组，并按需要截取或用相应默认值填充。为保证原数组和副本的索引全部有效，两个数组将包含相同的值。在原数组无效的情况下，为保证副本的有效性，副本将包含相应默认值。当且仅当指定长度大于原数组时，这样的索引才存在。</p>
+<p>参数：<br>original - 用来复制的原数组<br>newLength - 将返回副本的长度<br>type -byte,short,int,long,float,char,</p>
+<p>返回：原数组的副本，通过截取或默认值(类型由数组类型来决定)来得到指定的长度。</p>
+<p>抛出：<br>NegativeArraySizeException - 如果newLength是负数<br>NullPointerException -如果原数组是null</p>
+<p>注意事项：</p>
+<p>填充的默认值数据由数组的类型决定，char类型为null(‘\u000’)，float、long、int、byte、double类型为0（0的类型由数组类型决定），boolean类型为false。</p>
+<p>9、copyOfRange -复制指定范围元素到新数组</p>
+<p>声明<br>public static <t> T[] copyOfRange(T[] original,int from,int to)<br>public static <t,u> T[] copyOfRange(U[] original,int from,int to, Class&lt;? extends T[]&gt; newType)</t,u></t></p>
+<p>public static <t> T[] copyOfRange(T[] original,int from,int to)<br>public static <t,u> T[] copyOfRange(U[] original,int from,int to,Class&lt;? extends T[]&gt; newType)</t,u></t></p>
+<p>描述：<br>复制指定数组的指定范围到新数组。范围的起始索引(from)必须位于0和原数组长度（riginal.length）之间。起始索引(from)的值被放置到副本的起始元素里（除非 from == original.length 或者from ==to)。原数组随后的元素被放置到副本后继的元素中。范围的终止索引(to)必须大于或等于from，</p>
+<p>可以大于原数组长度（original.length）, 副本元素索引大于或等于（original.length - from）的全部放置为默认值i。 返回数组的长度为to - from。</p>
+<p>参数：</p>
+<p>original - 用来复制的原数组<br>from - 用来复制的起始索引，包括。<br>to - 用来复制的最终索引－－不包括 (该索引可以超出数组)<br>newType - 返回副本的类</p>
+<p>返回：<br>一个新数组，它包含原数组指定范围内的元素，通过截取或者分配默认值获取需要的长度。</p>
+<p>抛出：<br>ArrayIndexOutOfBoundsException - 如果 from &lt; 0 或者 from &gt; original.length<br>IllegalArgumentException - 如果 from &gt; to<br>NullPointerException - 如果原数组为null（即没有初始化）</p>
+<p>注意事项：</p>
+<p>填充的默认值数据由数组的类型决定，char类型为null(‘\u000’)，float、long、int、byte、double类型为0（0的类型由数组类型决定），boolean类型为false。</p>
+<h3 id="小结："><a href="#小结：" class="headerlink" title="小结："></a>小结：</h3><p>1、Arrays类的方法，除个别方法不支持boolean型数组以外，基本上支持所有的数据类型。</p>
+<p>2、deepEquals()方法实际上是Equals()方法的递归算法;deepToString()是toString()的递归。</p>
+<p>3、搜索前必须先使用对应的sort方法排序。比如使用第三种方法指定比较器搜索前必须使用sort(T[],Comparator)方法。</p>
+<p>4、Java指定范围时一般采用下包含方式，即包括范围的第一个索引，不包括范围的最后一个索引。fill()等方法里的范围fromIndex(首一个索引，包括)</p>
+<p>、toIndex(最后一个索引，不包括)；copyOfRange()方法里的方法from(首索引，包括)，to（尾索引，不包括）</p>
+<p>5、fill()、sort()、binarySearch()指定范围时，若fromIndex==toIndex时，范围为空，超出数组长度或fromIndex&gt;toIndex都抛出异常。</p>
+<h3 id="代码示例："><a href="#代码示例：" class="headerlink" title="代码示例："></a>代码示例：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">   <span class="keyword">int</span> [] arr = &#123;<span class="number">33</span>,<span class="number">22</span>,<span class="number">11</span>,<span class="number">44</span>,<span class="number">66</span>,<span class="number">55</span>&#125;;</div><div class="line">   System.out.println(Arrays.toString(arr));<span class="comment">//数组转字符串       </span></div><div class="line">  </div><div class="line">   Arrays.sort(arr);                        <span class="comment">//排序</span></div><div class="line">   System.out.println(Arrays.toString(arr));</div><div class="line">   </div><div class="line">   <span class="keyword">int</span>[] arr2 = &#123;<span class="number">11</span>,<span class="number">22</span>,<span class="number">33</span>,<span class="number">44</span>,<span class="number">55</span>,<span class="number">66</span>&#125;;</div><div class="line">   System.out.println(Arrays.binarySearch(arr2, <span class="number">22</span>));</div><div class="line">   System.out.println(Arrays.binarySearch(arr2, <span class="number">66</span>));</div><div class="line">   System.out.println(Arrays.binarySearch(arr2, <span class="number">88</span>)); </div><div class="line">   <span class="comment">//不在数组中的数索引位置为-（插入点索引） - 1</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="基本类型概述"><a href="#基本类型概述" class="headerlink" title="基本类型概述"></a>基本类型概述</h2><h3 id="为什么会有基本类型包装类："><a href="#为什么会有基本类型包装类：" class="headerlink" title="为什么会有基本类型包装类："></a>为什么会有基本类型包装类：</h3><p>将基本数据类型封装成对象的好处在于可以在对象中定义更多的功能方法操作该数据。八种数据类型都有他们对应的包装类，其中六种是直接把他们对应的小写变成大写。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">基本类型</th>
+<th style="text-align:center">包装类</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">byte</td>
+<td style="text-align:center">Byte</td>
+</tr>
+<tr>
+<td style="text-align:center">short</td>
+<td style="text-align:center">Short</td>
+</tr>
+<tr>
+<td style="text-align:center">int</td>
+<td style="text-align:center">Integer</td>
+</tr>
+<tr>
+<td style="text-align:center">long</td>
+<td style="text-align:center">Long</td>
+</tr>
+<tr>
+<td style="text-align:center">float</td>
+<td style="text-align:center">Float</td>
+</tr>
+<tr>
+<td style="text-align:center">double</td>
+<td style="text-align:center">Double</td>
+</tr>
+<tr>
+<td style="text-align:center">char</td>
+<td style="text-align:center">Character</td>
+</tr>
+<tr>
+<td style="text-align:center">boolean</td>
+<td style="text-align:center">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Integer类的概述和构造方法："><a href="#Integer类的概述和构造方法：" class="headerlink" title="Integer类的概述和构造方法："></a>Integer类的概述和构造方法：</h3><h4 id="integer类概述"><a href="#integer类概述" class="headerlink" title="integer类概述"></a>integer类概述</h4><p>Integer类在对象中包装了一个基本类型int的值，该类提供了多个方法，能在int类型和String类型之间互相转换，还提供了除了int类型时非常有用的其他常量和方法。</p>
+<h4 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h4><p><em>public Integer(int value)</em></p>
+<p><em>public Integer(String s)</em></p>
+<h4 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo2_Integer</span> </span>&#123;</div><div class="line"><span class="comment">/**</span></div><div class="line"> * <span class="doctag">@param</span> args</div><div class="line"> */</div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">	System.out.println(Integer.MAX_VALUE);</div><div class="line">	System.out.println(Integer.MIN_VALUE);</div><div class="line">	</div><div class="line">	Integer i1 = <span class="keyword">new</span> Integer(<span class="number">100</span>);</div><div class="line">	System.out.println(i1);</div><div class="line">	</div><div class="line">	Integer i2 = <span class="keyword">new</span> Integer(<span class="string">"100"</span>);</div><div class="line">	System.out.println(i2);</div><div class="line"> &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
       
     </div>
 
@@ -445,7 +594,7 @@
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2017/02/24/几种排序/"
-           data-title="常见的几种排序" data-url="http://yoursite.com/2017/02/24/几种排序/">
+           data-title="常见的几种排序与数据类型" data-url="http://yoursite.com/2017/02/24/几种排序/">
       </div>
     
   </div>
@@ -579,7 +728,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#冒泡排序与选择排序"><span class="nav-number">1.</span> <span class="nav-text">冒泡排序与选择排序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#冒泡排序图解："><span class="nav-number">1.1.</span> <span class="nav-text">冒泡排序图解：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择排序图解："><span class="nav-number">1.2.</span> <span class="nav-text">选择排序图解：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java冒泡排序与选择排序示例："><span class="nav-number">1.3.</span> <span class="nav-text">Java冒泡排序与选择排序示例：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二分查找"><span class="nav-number">2.</span> <span class="nav-text">二分查找</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#二分查找要求"><span class="nav-number">2.1.</span> <span class="nav-text">二分查找要求:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JAVA二分查找示例"><span class="nav-number">2.2.</span> <span class="nav-text">JAVA二分查找示例:</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#冒泡排序与选择排序"><span class="nav-number">1.</span> <span class="nav-text">冒泡排序与选择排序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#冒泡排序图解："><span class="nav-number">1.1.</span> <span class="nav-text">冒泡排序图解：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择排序图解："><span class="nav-number">1.2.</span> <span class="nav-text">选择排序图解：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java冒泡排序与选择排序示例："><span class="nav-number">1.3.</span> <span class="nav-text">Java冒泡排序与选择排序示例：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二分查找"><span class="nav-number">2.</span> <span class="nav-text">二分查找</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#二分查找要求"><span class="nav-number">2.1.</span> <span class="nav-text">二分查找要求:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JAVA二分查找示例"><span class="nav-number">2.2.</span> <span class="nav-text">JAVA二分查找示例:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Arrays类的概述和方法使用"><span class="nav-number">3.</span> <span class="nav-text">Arrays类的概述和方法使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#计算机术语："><span class="nav-number">3.1.</span> <span class="nav-text">计算机术语：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小结："><span class="nav-number">3.2.</span> <span class="nav-text">小结：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码示例："><span class="nav-number">3.3.</span> <span class="nav-text">代码示例：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本类型概述"><span class="nav-number">4.</span> <span class="nav-text">基本类型概述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么会有基本类型包装类："><span class="nav-number">4.1.</span> <span class="nav-text">为什么会有基本类型包装类：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Integer类的概述和构造方法："><span class="nav-number">4.2.</span> <span class="nav-text">Integer类的概述和构造方法：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#integer类概述"><span class="nav-number">4.2.1.</span> <span class="nav-text">integer类概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#构造方法"><span class="nav-number">4.2.2.</span> <span class="nav-text">构造方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#案例"><span class="nav-number">4.2.3.</span> <span class="nav-text">案例</span></a></li></ol></li></ol></li></ol></div>
             
           </div>
         </section>
