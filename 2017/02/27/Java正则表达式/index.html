@@ -91,7 +91,7 @@
 <meta property="og:site_name" content="Chrisyhouse">
 <meta property="og:description" content="正则表达式概念正则表达式定义了字符串的模式。正则表达式可以用来搜索、编辑或处理文本。正则表达式并不仅限于某一种语言，但是在每种语言中有细微的差别。Java 正则表达式和 Perl 的是最为相似的。指一个用来描述或者匹配一系列符合某个语法规则的字符串的单个字符串，其实就是一种规则。作用：注册邮箱，邮箱有用户名和密码，一般会对其限制长度，这个约束就是正则表达式做的。java.util.regex 包主">
 <meta property="og:image" content="http://olqqu4gu2.bkt.clouddn.com/learn/javalearnjava.jpg">
-<meta property="og:updated_time" content="2017-02-27T08:53:34.401Z">
+<meta property="og:updated_time" content="2017-02-27T09:37:53.240Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java正则表达式">
 <meta name="twitter:description" content="正则表达式概念正则表达式定义了字符串的模式。正则表达式可以用来搜索、编辑或处理文本。正则表达式并不仅限于某一种语言，但是在每种语言中有细微的差别。Java 正则表达式和 Perl 的是最为相似的。指一个用来描述或者匹配一系列符合某个语法规则的字符串的单个字符串，其实就是一种规则。作用：注册邮箱，邮箱有用户名和密码，一般会对其限制长度，这个约束就是正则表达式做的。java.util.regex 包主">
@@ -339,7 +339,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://olqqu4gu2.bkt.clouddn.com/learn/javalearnjava.jpg" rel="gallery_ciznn0vkj0000f0t7q4ziexim"
+                 href="http://olqqu4gu2.bkt.clouddn.com/learn/javalearnjava.jpg" rel="gallery_ciznwrxbs0000yct751lx3chp"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://olqqu4gu2.bkt.clouddn.com/learn/javalearnjava.jpg" itemprop="contentUrl"/>
               </a>
@@ -352,14 +352,8 @@
       
 
       
-        <h2 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p><a href="http://www.runoob.com/java/java-regular-expressions.html" target="_blank" rel="external">正则表达式</a>定义了字符串的模式。正则表达式可以用来搜索、编辑或处理文本。正则表达式并不仅限于某一种语言，但是在每种语言中有细微的差别。Java 正则表达式和 Perl 的是最为相似的。指一个用来描述或者匹配一系列符合某个语法规则的字符串的单个字符串，其实就是一种规则。作用：注册邮箱，邮箱有用户名和密码，一般会对其限制长度，这个约束就是正则表达式做的。<br>java.util.regex 包主要包括以下三个类：</p>
-<ul>
-<li><strong>Pattern 类：</strong>pattern 对象是一个正则表达式的编译表示。Pattern 类没有公共构造方法。要创建一个 Pattern 对象，你必须首先调用其公共静态编译方法，它返回一个 Pattern 对象。该方法接受一个正则表达式作为它的第一个参数。</li>
-<li><strong>Matcher 类：</strong>Matcher 对象是对输入字符串进行解释和匹配操作的引擎。与Pattern 类一样，Matcher 也没有公共构造方法。你需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。</li>
-<li><strong>PatternSyntaxException：</strong>PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。<a id="more"></a>
+        <h2 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p><a href="http://www.runoob.com/java/java-regular-expressions.html" target="_blank" rel="external">正则表达式</a>定义了字符串的模式。正则表达式可以用来搜索、编辑或处理文本。正则表达式并不仅限于某一种语言，但是在每种语言中有细微的差别。Java 正则表达式和 Perl 的是最为相似的。指一个用来描述或者匹配一系列符合某个语法规则的字符串的单个字符串，其实就是一种规则。作用：注册邮箱，邮箱有用户名和密码，一般会对其限制长度，这个约束就是正则表达式做的。<br>java.util.regex 包主要包括以下三个类：<br><em>Pattern 类</em>：pattern 对象是一个正则表达式的编译表示。Pattern 类没有公共构造方法。要创建一个 Pattern 对象，你必须首先调用其公共静态编译方法，它返回一个 Pattern 对象。该方法接受一个正则表达式作为它的第一个参数。<br><em>Matcher 类</em>：Matcher 对象是对输入字符串进行解释和匹配操作的引擎。与Pattern 类一样，Matcher 也没有公共构造方法。你需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。<br><em>PatternSyntaxException</em>：PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。<br>  <a id="more"></a></p>
 <h3 id="案例1：检验qq号"><a href="#案例1：检验qq号" class="headerlink" title="案例1：检验qq号"></a>案例1：检验qq号</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo1_Regex</span> </span>&#123;</div><div class="line">	<span class="comment">/**</span></div><div class="line">	 * 校验qq号码</div><div class="line">	 *要求：1  必须5-15位数字</div><div class="line">	 *    2 0不能开头</div><div class="line">	 *    3  必须都是数字</div><div class="line">	 */</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        System.out.println(checkQq(<span class="string">"123456778"</span>));</div><div class="line">        String regex = <span class="string">"[1-9]\\d&#123;4,14&#125;"</span>;<span class="comment">//正则表达式</span></div><div class="line">        System.out.println(<span class="string">"26555656"</span>.matches(regex));</div><div class="line">	&#125;</div><div class="line">	<span class="comment">//非正则表达式实现</span></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">checkQq</span><span class="params">(String qq)</span></span>&#123;</div><div class="line">         <span class="keyword">boolean</span> flag = <span class="keyword">true</span>;</div><div class="line">         <span class="keyword">if</span> (qq.length() &gt;= <span class="number">5</span> &amp;&amp; qq.length() &lt;= <span class="number">15</span>) &#123;</div><div class="line">			<span class="keyword">if</span> (!qq.startsWith(<span class="string">"0"</span>)) &#123;</div><div class="line">				<span class="keyword">char</span>[] arr = qq.toCharArray(); <span class="comment">//将字符串转换为字符数组判断每一个字符是否为数字</span></div><div class="line">			    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</div><div class="line">					<span class="keyword">char</span> ch = arr[i];</div><div class="line">					<span class="keyword">if</span> (!(ch &gt;= <span class="string">'0'</span> &amp;&amp; ch &lt;= <span class="string">'9'</span>)) &#123;</div><div class="line">						flag = <span class="keyword">false</span>;</div><div class="line">						<span class="keyword">break</span>;</div><div class="line">					&#125;</div><div class="line">				&#125;</div><div class="line">			&#125;<span class="keyword">else</span> &#123;</div><div class="line">				flag = <span class="keyword">false</span>; <span class="comment">//0开头不符合                </span></div><div class="line">			&#125;</div><div class="line">		&#125;<span class="keyword">else</span> &#123;</div><div class="line">			flag = <span class="keyword">false</span>;<span class="comment">//长度不符合</span></div><div class="line">		&#125;</div><div class="line">		<span class="keyword">return</span> flag;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-</ul>
 <h3 id="正则表达式语法"><a href="#正则表达式语法" class="headerlink" title="正则表达式语法"></a>正则表达式语法</h3>
       
     </div>
@@ -497,7 +491,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
