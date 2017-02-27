@@ -350,12 +350,14 @@
 
       
         
-          <h2 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h2><p><a href="http://www.runoob.com/java/java-regular-expressions.html">正则表达式</a>定义了字符串的模式。正则表达式可以用来搜索、编辑或处理文本。正则表达式并不仅限于某一种语言，但是在每种语言中有细微的差别。Java 正则表达式和 Perl 的是最为相似的。<strong>指一个用来描述或者匹配一系列符合某个语法规则的字符串的单个字符串</strong>，其实就是一种规则。<strong>作用</strong>：注册邮箱，邮箱有用户名和密码，一般会对其限制长度，这个约束就是正则表达式做的。</p>
+          <h2 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p><a href="http://www.runoob.com/java/java-regular-expressions.html">正则表达式</a>定义了字符串的模式。正则表达式可以用来搜索、编辑或处理文本。正则表达式并不仅限于某一种语言，但是在每种语言中有细微的差别。Java 正则表达式和 Perl 的是最为相似的。<strong>指一个用来描述或者匹配一系列符合某个语法规则的字符串的单个字符串</strong>，其实就是一种规则。<strong>作用</strong>：注册邮箱，邮箱有用户名和密码，一般会对其限制长度，这个约束就是正则表达式做的。</p>
 <p>java.util.regex 包主要包括以下三个类：</p>
 <ul>
-<li><strong>Pattern 类：</strong>pattern 对象是一个正则表达式的编译表示。Pattern 类没有公共构造方法。要创建一个 Pattern 对象，你必须首先调用其公共静态编译方法，它返回一个 Pattern 对象。该方法接受一个正则表达式作为它的第一个参数。</li>
-<li><strong>Matcher 类：</strong>Matcher 对象是对输入字符串进行解释和匹配操作的引擎。与Pattern 类一样，Matcher 也没有公共构造方法。你需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。</li>
-<li><strong>PatternSyntaxException：</strong>PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。
+<li><p><strong>Pattern 类：</strong>pattern 对象是一个正则表达式的编译表示。Pattern 类没有公共构造方法。要创建一个 Pattern 对象，你必须首先调用其公共静态编译方法，它返回一个 Pattern 对象。该方法接受一个正则表达式作为它的第一个参数。</p>
+</li>
+<li><p><strong>Matcher 类：</strong>Matcher 对象是对输入字符串进行解释和匹配操作的引擎。与Pattern 类一样，Matcher 也没有公共构造方法。你需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。</p>
+</li>
+<li><p><strong>PatternSyntaxException：</strong>PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。</p>
           <div class="post-more-link text-center">
             <a class="btn" href="/2017/02/27/Java正则表达式/#more" rel="contents">
               阅读全文 &raquo;
