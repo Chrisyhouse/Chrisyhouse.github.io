@@ -93,7 +93,7 @@
 <meta property="og:description" content="集合框架在前面学习了数组，集合框架也是和数组一样来保存一组数据，集合框架主要包括列表、集合和映射。我们需要了解什么是集合框架，和集合框架包括哪些形式？掌握什么是列表和列表中包括哪些类和接口，掌握什么是集合和集合中包括哪些类和接口，掌握什么是映射和映射中包括哪些类和接口。
 概论集合是某一类对象的通称，这类对象代表以某种方式组合到一起的对象；它是将多个元素组合为一个单元的对象，用于存储、检索、操纵和传">
 <meta property="og:image" content="http://olqqu4gu2.bkt.clouddn.com/learnjava121.jpg">
-<meta property="og:updated_time" content="2017-03-01T07:33:20.334Z">
+<meta property="og:updated_time" content="2017-03-21T12:30:04.408Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="集合框架">
 <meta name="twitter:description" content="集合框架在前面学习了数组，集合框架也是和数组一样来保存一组数据，集合框架主要包括列表、集合和映射。我们需要了解什么是集合框架，和集合框架包括哪些形式？掌握什么是列表和列表中包括哪些类和接口，掌握什么是集合和集合中包括哪些类和接口，掌握什么是映射和映射中包括哪些类和接口。
@@ -311,7 +311,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://olqqu4gu2.bkt.clouddn.com/learnjava121.jpg" rel="gallery_cizqmsmj300091ot720ecujbz"
+                 href="http://olqqu4gu2.bkt.clouddn.com/learnjava121.jpg" rel="gallery_cj0jid01n0009bgt704h0tpvg"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://olqqu4gu2.bkt.clouddn.com/learnjava121.jpg" itemprop="contentUrl"/>
               </a>
@@ -332,41 +332,32 @@
 <h3 id="集合框架定义的接口的概述"><a href="#集合框架定义的接口的概述" class="headerlink" title="集合框架定义的接口的概述"></a>集合框架定义的接口的概述</h3><table>
 <thead>
 <tr>
-<th style="text-align:center">序号</th>
 <th>接口描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">1</td>
 <td>Collection 接口Collection 是最基本的集合接口，一个 Collection 代表一组 Object，Java不提供直接继承自Collection的类，只提供继承于的子接口(如List和set)。</td>
 </tr>
 <tr>
-<td style="text-align:center">2</td>
 <td>List 接口List接口是一个有序的Collection，使用此接口能够精确的控制每个元素插入的位置，能够通过索引(元素在List中位置，类似于数组的小标)来访问List中的元素，而且允许有相同的元素。</td>
 </tr>
 <tr>
-<td style="text-align:center">3</td>
 <td>SetSet 具有与 Collection 完全一样的接口，只是行为上不同，Set 不保存重复的元素。</td>
 </tr>
 <tr>
-<td style="text-align:center">4</td>
 <td>SortedSet继承于Set保存有序的集合。</td>
 </tr>
 <tr>
-<td style="text-align:center">5</td>
 <td>Map将唯一的键映射到值。</td>
 </tr>
 <tr>
-<td style="text-align:center">6</td>
 <td>Map.Entry描述在一个Map中的一个元素（键/值对）。是一个Map的内部类。</td>
 </tr>
 <tr>
-<td style="text-align:center">7</td>
 <td>SortedMap继承于Map，使Key保持在升序排列。</td>
 </tr>
 <tr>
-<td style="text-align:center">8</td>
 <td>Enumeration这是一个传统的接口和定义的方法，通过它可以枚举（一次获得一个）对象集合中的元素。这个传统接口已被迭代器取代。</td>
 </tr>
 </tbody>
@@ -375,69 +366,53 @@
 <table>
 <thead>
 <tr>
-<th style="text-align:center">序号</th>
 <th>类描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">1</td>
-<td><strong>AbstractCollection </strong>实现了大部分的集合接口。</td>
+<td>AbstractCollection 实现了大部分的集合接口。</td>
 </tr>
 <tr>
-<td style="text-align:center">2</td>
-<td><strong>AbstractList </strong>继承于AbstractCollection 并且实现了大部分List接口。</td>
+<td>AbstractList 继承于AbstractCollection 并且实现了大部分List接口。</td>
 </tr>
 <tr>
-<td style="text-align:center">3</td>
-<td><strong>AbstractSequentialList </strong>继承于 AbstractList ，提供了对数据元素的链式访问而不是随机访问。</td>
+<td>AbstractSequentialList继承于 AbstractList ，提供了对数据元素的链式访问而不是随机访问。</td>
 </tr>
 <tr>
-<td style="text-align:center">4</td>
 <td>LinkedList该类实现了List接口，允许有null（空）元素。主要用于创建链表数据结构，该类没有同步方法，如果多个线程同时访问一个List，则必须自己实现访问同步，解决方法就是在创建List时候构造一个同步的List。例如：<code>Listlist=Collections.synchronizedList(newLinkedList(...));</code>LinkedList 查找效率低。</td>
 </tr>
 <tr>
-<td style="text-align:center">5</td>
 <td>ArrayList该类也是实现了List的接口，实现了可变大小的数组，随机访问和遍历元素时，提供更好的性能。该类也是非同步的,在多线程的情况下不要使用。ArrayList 增长当前长度的50%，插入删除效率低。</td>
 </tr>
 <tr>
-<td style="text-align:center">6</td>
-<td><strong>AbstractSet </strong>继承于AbstractCollection 并且实现了大部分Set接口。</td>
+<td>AbstractSet继承于AbstractCollection 并且实现了大部分Set接口。</td>
 </tr>
 <tr>
-<td style="text-align:center">7</td>
 <td>HashSet该类实现了Set接口，不允许出现重复元素，不保证集合中元素的顺序，允许包含值为null的元素，但最多只能一个。</td>
 </tr>
 <tr>
-<td style="text-align:center">8</td>
 <td>LinkedHashSet具有可预知迭代顺序的 <code>Set</code> 接口的哈希表和链接列表实现。</td>
 </tr>
 <tr>
-<td style="text-align:center">9</td>
 <td>TreeSet该类实现了Set接口，可以实现排序等功能。</td>
 </tr>
 <tr>
-<td style="text-align:center">10</td>
-<td><strong>AbstractMap </strong>实现了大部分的Map接口。</td>
+<td>AbstractMap实现了大部分的Map接口。</td>
 </tr>
 <tr>
-<td style="text-align:center">11</td>
 <td>HashMap HashMap 是一个散列表，它存储的内容是键值对(key-value)映射。该类实现了Map接口，根据键的HashCode值存储数据，具有很快的访问速度，最多允许一条记录的键为null，不支持线程同步。</td>
 </tr>
 <tr>
-<td style="text-align:center">12</td>
 <td>TreeMap 继承了AbstractMap，并且使用一颗树。</td>
 </tr>
 <tr>
-<td style="text-align:center">13</td>
 <td>WeakHashMap 继承AbstractMap类，使用弱密钥的哈希表。</td>
 </tr>
 <tr>
-<td style="text-align:center">14</td>
 <td>LinkedHashMap 继承于HashMap，使用元素的自然顺序对元素进行排序.</td>
 </tr>
 <tr>
-<td style="text-align:center">15</td>
 <td>IdentityHashMap 继承AbstractMap类，比较文档时使用引用相等。</td>
 </tr>
 </tbody>
@@ -446,33 +421,26 @@
 <table>
 <thead>
 <tr>
-<th style="text-align:center">序号</th>
 <th>类描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">1</td>
 <td>Vector 该类和ArrayList非常相似，但是该类是同步的，可以用在多线程的情况，该类允许设置默认的增长长度，默认扩容方式为原来的2倍。</td>
 </tr>
 <tr>
-<td style="text-align:center">2</td>
 <td>Stack 栈是Vector的一个子类，它实现了一个标准的后进先出的栈。</td>
 </tr>
 <tr>
-<td style="text-align:center">3</td>
 <td>Dictionary Dictionary 类是一个抽象类，用来存储键/值对，作用和Map类相似。</td>
 </tr>
 <tr>
-<td style="text-align:center">4</td>
 <td>Hashtable Hashtable 是 Dictionary(字典) 类的子类，位于 java.util 包中。</td>
 </tr>
 <tr>
-<td style="text-align:center">5</td>
 <td>Properties Properties 继承于 Hashtable，表示一个持久的属性集，属性列表中每个键及其对应值都是一个字符串。</td>
 </tr>
 <tr>
-<td style="text-align:center">6</td>
 <td>BitSet一个Bitset类创建一种特殊类型的数组来保存位值。BitSet中数组大小会随需要增加。</td>
 </tr>
 </tbody>
@@ -481,20 +449,17 @@
 <table>
 <thead>
 <tr>
-<th style="text-align:center">序号</th>
 <th>算法描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">1</td>
 <td>Collection Algorithms这里是一个列表中的所有算法实现。</td>
 </tr>
 </tbody>
 </table>
 <h2 id="java-util-List"><a href="#java-util-List" class="headerlink" title="java.util.List"></a><em>java.util.List</em></h2><p><em>java.util.List</em>的几种实现中，有三种最为常用的实现类，这三个类分别是Vector类，ArrayList类和LinkedList类。</p>
 <h3 id="Vector类"><a href="#Vector类" class="headerlink" title="Vector类"></a><em>Vector</em>类</h3><p>Vector类也称为向量，从java诞生就有，之后被作为集合框架的一部分，其性能特点与<em>ArrayList</em>基本上是相同的。不同之处是该类的功能方法是同步的，同一时刻只能有一个线程访问，没有特殊需要，现在一般用<em>Arraylist</em>。</p>
-<p>+</p>
 
       
     </div>
