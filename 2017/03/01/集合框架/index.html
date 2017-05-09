@@ -93,7 +93,7 @@
 <meta property="og:description" content="集合框架在前面学习了数组，集合框架也是和数组一样来保存一组数据，集合框架主要包括列表、集合和映射。我们需要了解什么是集合框架，和集合框架包括哪些形式？掌握什么是列表和列表中包括哪些类和接口，掌握什么是集合和集合中包括哪些类和接口，掌握什么是映射和映射中包括哪些类和接口。
 概论集合是某一类对象的通称，这类对象代表以某种方式组合到一起的对象；它是将多个元素组合为一个单元的对象，用于存储、检索、操纵和传">
 <meta property="og:image" content="http://olqqu4gu2.bkt.clouddn.com/learnjava121.jpg">
-<meta property="og:updated_time" content="2017-03-21T12:30:04.408Z">
+<meta property="og:updated_time" content="2017-05-09T16:57:06.677Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="集合框架">
 <meta name="twitter:description" content="集合框架在前面学习了数组，集合框架也是和数组一样来保存一组数据，集合框架主要包括列表、集合和映射。我们需要了解什么是集合框架，和集合框架包括哪些形式？掌握什么是列表和列表中包括哪些类和接口，掌握什么是集合和集合中包括哪些类和接口，掌握什么是映射和映射中包括哪些类和接口。
@@ -460,6 +460,15 @@
 </table>
 <h2 id="java-util-List"><a href="#java-util-List" class="headerlink" title="java.util.List"></a><em>java.util.List</em></h2><p><em>java.util.List</em>的几种实现中，有三种最为常用的实现类，这三个类分别是Vector类，ArrayList类和LinkedList类。</p>
 <h3 id="Vector类"><a href="#Vector类" class="headerlink" title="Vector类"></a><em>Vector</em>类</h3><p>Vector类也称为向量，从java诞生就有，之后被作为集合框架的一部分，其性能特点与<em>ArrayList</em>基本上是相同的。不同之处是该类的功能方法是同步的，同一时刻只能有一个线程访问，没有特殊需要，现在一般用<em>Arraylist</em>。</p>
+<h3 id="ArrayList类"><a href="#ArrayList类" class="headerlink" title="ArrayList类"></a>ArrayList类</h3><p>基本功能演示：</p>
+<pre><code>boolean add(E e)添加元素，可以是任意的
+boolean remove(Object o)删除指定元素
+void clear()清空
+boolean contains(Object o)判断是否包含
+boolean isEmpty()判断是否为空
+int size()获取集合中元素的个数
+</code></pre><p>add方法如果是List集合一直都返回true,因为List集合中是可以存储重复元素的，如果是Set集合当存储重复元素的时候,就会返回false。<br>ArrayList的父类的父类重写toString方法,所以在打印对象的引用的时候,输出的结果不是Object类中toString的结果。</p>
+<h3 id="LinkedList类"><a href="#LinkedList类" class="headerlink" title="LinkedList类"></a>LinkedList类</h3><p>链表实现的，主要用于增删，缺点是查找慢（需要从首或者尾开始查找）。</p>
 
       
     </div>
@@ -678,7 +687,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#集合框架"><span class="nav-number">1.</span> <span class="nav-text">集合框架</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概论"><span class="nav-number">1.1.</span> <span class="nav-text">概论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#集合框架体系如图所示"><span class="nav-number">1.1.1.</span> <span class="nav-text">集合框架体系如图所示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#集合框架定义的接口的概述"><span class="nav-number">1.1.2.</span> <span class="nav-text">集合框架定义的接口的概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#集合实现类（集合类）"><span class="nav-number">1.1.3.</span> <span class="nav-text">集合实现类（集合类）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#集合算法"><span class="nav-number">1.1.4.</span> <span class="nav-text">集合算法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#java-util-List"><span class="nav-number">1.2.</span> <span class="nav-text">java.util.List</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Vector类"><span class="nav-number">1.2.1.</span> <span class="nav-text">Vector类</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#集合框架"><span class="nav-number">1.</span> <span class="nav-text">集合框架</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概论"><span class="nav-number">1.1.</span> <span class="nav-text">概论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#集合框架体系如图所示"><span class="nav-number">1.1.1.</span> <span class="nav-text">集合框架体系如图所示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#集合框架定义的接口的概述"><span class="nav-number">1.1.2.</span> <span class="nav-text">集合框架定义的接口的概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#集合实现类（集合类）"><span class="nav-number">1.1.3.</span> <span class="nav-text">集合实现类（集合类）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#集合算法"><span class="nav-number">1.1.4.</span> <span class="nav-text">集合算法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#java-util-List"><span class="nav-number">1.2.</span> <span class="nav-text">java.util.List</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Vector类"><span class="nav-number">1.2.1.</span> <span class="nav-text">Vector类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ArrayList类"><span class="nav-number">1.2.2.</span> <span class="nav-text">ArrayList类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LinkedList类"><span class="nav-number">1.2.3.</span> <span class="nav-text">LinkedList类</span></a></li></ol></li></ol></li></ol></div>
             
           </div>
         </section>
